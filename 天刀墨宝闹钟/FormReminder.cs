@@ -33,8 +33,8 @@ namespace 天刀墨宝闹钟
 
         private void FormReminder_Load(object sender, EventArgs e)
         {
-            var x = fatherFormXPos-Width;
-            var y = fatherFormYPos-Height+63;
+            var x = fatherFormXPos - Width;
+            var y = fatherFormYPos + 63 - Height;
             Location = new Point(x, y);
         }
 
@@ -54,8 +54,8 @@ namespace 天刀墨宝闹钟
 
                 Height = 24;
 
-                var x = Screen.PrimaryScreen.Bounds.Width - Width - 20;
-                var y =  Height - 150;
+                var x = fatherFormXPos - Width;
+                var y = fatherFormYPos + 63 - Height;
                 Location = new Point(x, y);
 
                 Visible = true;
@@ -80,7 +80,7 @@ namespace 天刀墨宝闹钟
                 Height = 24 * count;
 
                 var x = fatherFormXPos - Width;
-                var y = fatherFormYPos - Height + 63;
+                var y = fatherFormYPos + 63 - Height;
                 Location = new Point(x, y);
 
                 Visible = true;

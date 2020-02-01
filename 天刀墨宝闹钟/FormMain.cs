@@ -129,6 +129,7 @@ namespace 天刀墨宝闹钟
 
         FormSwitch formSwitch;//开关窗口
 
+
         private void AddPaintingToQueue (string name) //添加墨宝到监测的队列
         {
             paintingQueue.Add(name, new QueueElement { paintingName = name, timeArray = paintingData[name].timeList, isUsable = false,mapName= paintingData[name].mapName });
@@ -356,37 +357,6 @@ namespace 天刀墨宝闹钟
                             }
                         }
                     }
-                    /*
-                    else
-                    {
-                        if (time == nowChinaTime) //如果现在时辰和书画时辰一致
-                        {
-                            if (item.Value.isUsable == false)
-                            {
-                                //如果是从不可以变成了可以，那么就提醒一次
-                                item.Value.isUsable = true;
-                                Inform(item.Value.paintingName);
-
-                                //如果开启了窗口提示功能，那么就添加队列
-                                reminderList.Add(new string[] { item.Value.mapName, item.Value.paintingName });
-                                break;
-                            }
-                            else
-                            {
-                                //否则就直接跳出循环
-                                break;
-                            }
-                        }
-                        else //如果现在时辰和书画时辰不一致
-                        {
-                            if (time == item.Value.timeArray.Last()) //如果是最后一个元素，说明都不符合
-                            {
-                                //那么就重设一下状态
-                                item.Value.isUsable = false;
-                            }
-                        }
-                    }
-                    */
                 }
             }
         }
@@ -398,20 +368,21 @@ namespace 天刀墨宝闹钟
 
             foreach (var item in paintingQueue)
             {
+                var row = new string[] { item.Value.mapName, item.Value.paintingName, "default" };
+                ListViewItem listViewItem= new ListViewItem(row);
+
                 if (item.Value.isUsable)
                 {
-                    var row1 = new string[] { item.Value.mapName,item.Value.paintingName, "时辰已到" };
-                    ListViewItem listViewItem1 = new ListViewItem(row1);
-                    listViewItem1.ForeColor = Color.Green;
-                    listViewItem1.Font = new Font(listViewShowQueue.Font, FontStyle.Bold);
-                    listViewShowQueue.Items.Add(listViewItem1);
+                    listViewItem.SubItems[0].Text = "时辰已到";
+                    listViewItem.ForeColor = Color.Green;
+                    listViewItem.Font = new Font(listViewShowQueue.Font, FontStyle.Bold);
                 }
                 else
                 {
-                    var row2 = new string[] { item.Value.mapName, item.Value.paintingName, "时辰未到" };
-                    ListViewItem listViewItem2 = new ListViewItem(row2);
-                    listViewShowQueue.Items.Add(listViewItem2);
+                    listViewItem.SubItems[0].Text = "时辰未到";
                 }
+
+                listViewShowQueue.Items.Add(listViewItem);
             }
 
             listViewShowQueue.EndUpdate();
@@ -726,6 +697,8 @@ namespace 天刀墨宝闹钟
 
         private void buttonUseless_Click(object sender, EventArgs e)
         {
+
+            /*
             Random random = new Random();
             int index = random.Next(0, 15);
             Console.WriteLine(index);
@@ -781,7 +754,7 @@ namespace 天刀墨宝闹钟
                     MessageBox.Show("自闭中");
                     break;
             }
-            
+            */
         }
     }
 }
