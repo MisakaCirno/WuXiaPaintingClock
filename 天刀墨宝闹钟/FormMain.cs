@@ -166,15 +166,6 @@ namespace 天刀墨宝闹钟
 
             SettingsJson settings = JsonConvert.DeserializeObject<SettingsJson>(File.ReadAllText(jsonPath));
 
-            isTimerRunning = settings.isTimerRunning;
-            checkBoxTimer.Checked=isTimerRunning;
-
-            isUseBalloon = settings.isUseBalloon;
-            checkBoxRemind.Checked=isUseBalloon;
-
-            isUseReminderForm = settings.isUseReminderForm;
-            checkBoxGame.Checked = isUseReminderForm;
-
             //遍历每块板子
             foreach (var panel in flowLayoutPanelSetting.Controls)
             {
@@ -192,6 +183,15 @@ namespace 天刀墨宝闹钟
                     }
                 }
             }
+
+            isTimerRunning = settings.isTimerRunning;
+            checkBoxTimer.Checked = isTimerRunning;
+
+            isUseBalloon = settings.isUseBalloon;
+            checkBoxRemind.Checked = isUseBalloon;
+
+            isUseReminderForm = settings.isUseReminderForm;
+            checkBoxGame.Checked = isUseReminderForm;
         }
 
         private void SaveConfig()
@@ -256,6 +256,7 @@ namespace 天刀墨宝闹钟
             notifyIcon1.Text = "天刀墨宝闹钟";
             notifyIcon1.Icon = Properties.Resources.myIcon;
             notifyIcon1.Visible = true;
+
         }
 
         
@@ -540,6 +541,11 @@ namespace 天刀墨宝闹钟
 
             CheckQueue();
             UpdateList();
+            if (isUseReminderForm)
+            {
+                FormSwitch.reminderForm.UpdateForm(reminderList);
+            }
+            isUseMultiSelect = false;
         }
 
         private void button_ClearAll(object sender, EventArgs e) //取消选择全部
@@ -570,6 +576,7 @@ namespace 天刀墨宝闹钟
             {
                 FormSwitch.reminderForm.UpdateForm(reminderList);
             }
+            isUseMultiSelect = false;
         }
 
         private void treeView_DoubleClick(object sender, EventArgs e) //双击选中节点
@@ -604,7 +611,7 @@ namespace 天刀墨宝闹钟
             if (isNodeChecked == true && e.Node.Checked == false)
             {
                 //从选中变成未选中 删除
-                Console.WriteLine($"删除墨宝 {e.Node}");
+                //Console.WriteLine($"删除墨宝 {e.Node}");
                 RemovePaintingFromQueue(e.Node.Text);
                 if (isTimerRunning && isUseMultiSelect==false)
                 {
@@ -619,7 +626,7 @@ namespace 天刀墨宝闹钟
             else if (isNodeChecked == false && e.Node.Checked == true)
             {
                 //从未选中变成选中 添加
-                Console.WriteLine($"添加墨宝 {e.Node}");
+                //Console.WriteLine($"添加墨宝 {e.Node}");
                 AddPaintingToQueue(e.Node.Text);
                 if (isTimerRunning && isUseMultiSelect == false)
                 {

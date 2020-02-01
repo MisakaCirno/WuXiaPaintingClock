@@ -27,10 +27,6 @@ namespace 天刀墨宝闹钟
         public FormSwitch()
         {
             InitializeComponent();
-
-            var newColor = Color.FromArgb(0, 255, 0);
-            BackColor = newColor;
-            TransparencyKey = newColor;
         }
 
         //隐藏Alt+Tab显示
@@ -47,12 +43,14 @@ namespace 天刀墨宝闹钟
         private void FormSwitch_Load(object sender, EventArgs e)
         {
             var x = Screen.PrimaryScreen.Bounds.Width - Width;
-            var y = Screen.PrimaryScreen.Bounds.Height - Height - 80;
+            var y = Screen.PrimaryScreen.Bounds.Height - Height - 150;
             Location = new Point(x, y);
 
             pictureBox1.Image = Properties.Resources.ButtonON;
 
             reminderForm = new FormReminder();
+            reminderForm.fatherFormXPos=Location.X;
+            reminderForm.fatherFormYPos =Location.Y;
             reminderForm.UpdateForm(FormMain.reminderList);
             reminderForm.Show();
             isShowForm = true;

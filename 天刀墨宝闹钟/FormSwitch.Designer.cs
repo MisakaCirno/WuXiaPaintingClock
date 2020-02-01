@@ -48,14 +48,13 @@
             // 
             // timer1
             // 
-            this.timer1.Interval = 10000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FormSwitch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Green;
+            this.BackColor = System.Drawing.Color.Lime;
             this.ClientSize = new System.Drawing.Size(28, 63);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -63,7 +62,7 @@
             this.ShowInTaskbar = false;
             this.Text = "天涯明月刀";
             this.TopMost = true;
-            this.TransparencyKey = System.Drawing.Color.Green;
+            this.TransparencyKey = System.Drawing.Color.Lime;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormSwitch_FormClosing);
             this.Load += new System.EventHandler(this.FormSwitch_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

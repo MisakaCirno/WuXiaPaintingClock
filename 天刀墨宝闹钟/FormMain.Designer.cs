@@ -29,88 +29,88 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode83 = new System.Windows.Forms.TreeNode("画卷：杭州城");
-            System.Windows.Forms.TreeNode treeNode84 = new System.Windows.Forms.TreeNode("画卷：一醉轩");
-            System.Windows.Forms.TreeNode treeNode85 = new System.Windows.Forms.TreeNode("画卷：三潭印月");
-            System.Windows.Forms.TreeNode treeNode86 = new System.Windows.Forms.TreeNode("画卷：问道台");
-            System.Windows.Forms.TreeNode treeNode87 = new System.Windows.Forms.TreeNode("画卷：天绝禅院");
-            System.Windows.Forms.TreeNode treeNode88 = new System.Windows.Forms.TreeNode("画卷：龙井茶园");
-            System.Windows.Forms.TreeNode treeNode89 = new System.Windows.Forms.TreeNode("画卷：四明书院");
-            System.Windows.Forms.TreeNode treeNode90 = new System.Windows.Forms.TreeNode("画卷：连环坞");
-            System.Windows.Forms.TreeNode treeNode91 = new System.Windows.Forms.TreeNode("画卷：长风林");
-            System.Windows.Forms.TreeNode treeNode92 = new System.Windows.Forms.TreeNode("画卷：天泉日出");
-            System.Windows.Forms.TreeNode treeNode93 = new System.Windows.Forms.TreeNode("画卷：飞雪滩");
-            System.Windows.Forms.TreeNode treeNode94 = new System.Windows.Forms.TreeNode("画卷：霹雳堂旧址");
-            System.Windows.Forms.TreeNode treeNode95 = new System.Windows.Forms.TreeNode("画卷：铸神谷");
-            System.Windows.Forms.TreeNode treeNode96 = new System.Windows.Forms.TreeNode("画卷：枫桥夜泊");
-            System.Windows.Forms.TreeNode treeNode97 = new System.Windows.Forms.TreeNode("画卷：桃源道观");
-            System.Windows.Forms.TreeNode treeNode98 = new System.Windows.Forms.TreeNode("画卷：云泥梯田");
-            System.Windows.Forms.TreeNode treeNode99 = new System.Windows.Forms.TreeNode("画卷：宁海镇");
-            System.Windows.Forms.TreeNode treeNode100 = new System.Windows.Forms.TreeNode("画卷：长乐滩");
-            System.Windows.Forms.TreeNode treeNode101 = new System.Windows.Forms.TreeNode("画卷：桑楚山庄");
-            System.Windows.Forms.TreeNode treeNode102 = new System.Windows.Forms.TreeNode("画卷：万象门");
-            System.Windows.Forms.TreeNode treeNode103 = new System.Windows.Forms.TreeNode("画卷：清永民居");
-            System.Windows.Forms.TreeNode treeNode104 = new System.Windows.Forms.TreeNode("画卷：天香谷");
-            System.Windows.Forms.TreeNode treeNode105 = new System.Windows.Forms.TreeNode("画卷：乌金汊");
-            System.Windows.Forms.TreeNode treeNode106 = new System.Windows.Forms.TreeNode("画卷：野鹤湫");
-            System.Windows.Forms.TreeNode treeNode107 = new System.Windows.Forms.TreeNode("画卷：闽越旧城");
-            System.Windows.Forms.TreeNode treeNode108 = new System.Windows.Forms.TreeNode("画卷：淬剑清谷");
-            System.Windows.Forms.TreeNode treeNode109 = new System.Windows.Forms.TreeNode("画卷：风雨钱塘");
-            System.Windows.Forms.TreeNode treeNode110 = new System.Windows.Forms.TreeNode("画卷：吴王陵");
-            System.Windows.Forms.TreeNode treeNode111 = new System.Windows.Forms.TreeNode("画卷：百里荡");
-            System.Windows.Forms.TreeNode treeNode112 = new System.Windows.Forms.TreeNode("画卷：东平郡王府");
-            System.Windows.Forms.TreeNode treeNode113 = new System.Windows.Forms.TreeNode("画卷：雷峰夕照");
-            System.Windows.Forms.TreeNode treeNode114 = new System.Windows.Forms.TreeNode("画卷：藏锋谷");
-            System.Windows.Forms.TreeNode treeNode115 = new System.Windows.Forms.TreeNode("画卷：燕来镇");
-            System.Windows.Forms.TreeNode treeNode116 = new System.Windows.Forms.TreeNode("画卷：送君廊");
-            System.Windows.Forms.TreeNode treeNode117 = new System.Windows.Forms.TreeNode("画卷：得意坊");
-            System.Windows.Forms.TreeNode treeNode118 = new System.Windows.Forms.TreeNode("画卷：化清古佛");
-            System.Windows.Forms.TreeNode treeNode119 = new System.Windows.Forms.TreeNode("画卷：离魂峡");
-            System.Windows.Forms.TreeNode treeNode120 = new System.Windows.Forms.TreeNode("画卷：孔雀山庄");
-            System.Windows.Forms.TreeNode treeNode121 = new System.Windows.Forms.TreeNode("画卷：芳华谷");
-            System.Windows.Forms.TreeNode treeNode122 = new System.Windows.Forms.TreeNode("画卷：血衣楼");
-            System.Windows.Forms.TreeNode treeNode123 = new System.Windows.Forms.TreeNode("画卷：血衣禁地");
-            System.Windows.Forms.TreeNode treeNode124 = new System.Windows.Forms.TreeNode("画卷：平阳驿站");
-            System.Windows.Forms.TreeNode treeNode125 = new System.Windows.Forms.TreeNode("画卷：藏月客栈");
-            System.Windows.Forms.TreeNode treeNode126 = new System.Windows.Forms.TreeNode("画卷：古陶镇");
-            System.Windows.Forms.TreeNode treeNode127 = new System.Windows.Forms.TreeNode("画卷：骅阳林");
-            System.Windows.Forms.TreeNode treeNode128 = new System.Windows.Forms.TreeNode("画卷：天龙古刹");
-            System.Windows.Forms.TreeNode treeNode129 = new System.Windows.Forms.TreeNode("画卷：剑绝轩");
-            System.Windows.Forms.TreeNode treeNode130 = new System.Windows.Forms.TreeNode("画卷：玄刀断剑");
-            System.Windows.Forms.TreeNode treeNode131 = new System.Windows.Forms.TreeNode("画卷：望断斜阳");
-            System.Windows.Forms.TreeNode treeNode132 = new System.Windows.Forms.TreeNode("画卷：开封城门");
-            System.Windows.Forms.TreeNode treeNode133 = new System.Windows.Forms.TreeNode("画卷：护龙河");
-            System.Windows.Forms.TreeNode treeNode134 = new System.Windows.Forms.TreeNode("画卷：朱仙镇");
-            System.Windows.Forms.TreeNode treeNode135 = new System.Windows.Forms.TreeNode("画卷：相国寺");
-            System.Windows.Forms.TreeNode treeNode136 = new System.Windows.Forms.TreeNode("画卷：开封城");
-            System.Windows.Forms.TreeNode treeNode137 = new System.Windows.Forms.TreeNode("画卷：居士林");
-            System.Windows.Forms.TreeNode treeNode138 = new System.Windows.Forms.TreeNode("画卷：飞霞渡");
-            System.Windows.Forms.TreeNode treeNode139 = new System.Windows.Forms.TreeNode("画卷：百鬼夜哭");
-            System.Windows.Forms.TreeNode treeNode140 = new System.Windows.Forms.TreeNode("画卷：论剑峰");
-            System.Windows.Forms.TreeNode treeNode141 = new System.Windows.Forms.TreeNode("画卷：药王谷");
-            System.Windows.Forms.TreeNode treeNode142 = new System.Windows.Forms.TreeNode("画卷：论剑坪");
-            System.Windows.Forms.TreeNode treeNode143 = new System.Windows.Forms.TreeNode("画卷：鹦哥镇");
-            System.Windows.Forms.TreeNode treeNode144 = new System.Windows.Forms.TreeNode("画卷：太白山门");
-            System.Windows.Forms.TreeNode treeNode145 = new System.Windows.Forms.TreeNode("画卷：玉泉院");
-            System.Windows.Forms.TreeNode treeNode146 = new System.Windows.Forms.TreeNode("画卷：秦川云海");
-            System.Windows.Forms.TreeNode treeNode147 = new System.Windows.Forms.TreeNode("画卷：万剑沉浮");
-            System.Windows.Forms.TreeNode treeNode148 = new System.Windows.Forms.TreeNode("画卷：瀚海戈壁");
-            System.Windows.Forms.TreeNode treeNode149 = new System.Windows.Forms.TreeNode("画卷：神木谷");
-            System.Windows.Forms.TreeNode treeNode150 = new System.Windows.Forms.TreeNode("画卷：苍梧城");
-            System.Windows.Forms.TreeNode treeNode151 = new System.Windows.Forms.TreeNode("画卷：风飞谷");
-            System.Windows.Forms.TreeNode treeNode152 = new System.Windows.Forms.TreeNode("画卷：月下饮马");
-            System.Windows.Forms.TreeNode treeNode153 = new System.Windows.Forms.TreeNode("画卷：策马坡");
-            System.Windows.Forms.TreeNode treeNode154 = new System.Windows.Forms.TreeNode("画卷：绝尘马场");
-            System.Windows.Forms.TreeNode treeNode155 = new System.Windows.Forms.TreeNode("画卷：燕云神威");
-            System.Windows.Forms.TreeNode treeNode156 = new System.Windows.Forms.TreeNode("画卷：怪石黑风");
-            System.Windows.Forms.TreeNode treeNode157 = new System.Windows.Forms.TreeNode("画卷：云来镇");
-            System.Windows.Forms.TreeNode treeNode158 = new System.Windows.Forms.TreeNode("画卷：逢捷镇");
-            System.Windows.Forms.TreeNode treeNode159 = new System.Windows.Forms.TreeNode("画卷：凌云壁");
-            System.Windows.Forms.TreeNode treeNode160 = new System.Windows.Forms.TreeNode("画卷：醉月居");
-            System.Windows.Forms.TreeNode treeNode161 = new System.Windows.Forms.TreeNode("画卷：御风堂");
-            System.Windows.Forms.TreeNode treeNode162 = new System.Windows.Forms.TreeNode("画卷：万青竹海");
-            System.Windows.Forms.TreeNode treeNode163 = new System.Windows.Forms.TreeNode("画卷：翠海");
-            System.Windows.Forms.TreeNode treeNode164 = new System.Windows.Forms.TreeNode("画卷：忘忧谷");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("画卷：杭州城");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("画卷：一醉轩");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("画卷：三潭印月");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("画卷：问道台");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("画卷：天绝禅院");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("画卷：龙井茶园");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("画卷：四明书院");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("画卷：连环坞");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("画卷：长风林");
+            System.Windows.Forms.TreeNode treeNode10 = new System.Windows.Forms.TreeNode("画卷：天泉日出");
+            System.Windows.Forms.TreeNode treeNode11 = new System.Windows.Forms.TreeNode("画卷：飞雪滩");
+            System.Windows.Forms.TreeNode treeNode12 = new System.Windows.Forms.TreeNode("画卷：霹雳堂旧址");
+            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("画卷：铸神谷");
+            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("画卷：枫桥夜泊");
+            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("画卷：桃源道观");
+            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("画卷：云泥梯田");
+            System.Windows.Forms.TreeNode treeNode17 = new System.Windows.Forms.TreeNode("画卷：宁海镇");
+            System.Windows.Forms.TreeNode treeNode18 = new System.Windows.Forms.TreeNode("画卷：长乐滩");
+            System.Windows.Forms.TreeNode treeNode19 = new System.Windows.Forms.TreeNode("画卷：桑楚山庄");
+            System.Windows.Forms.TreeNode treeNode20 = new System.Windows.Forms.TreeNode("画卷：万象门");
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("画卷：清永民居");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("画卷：天香谷");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("画卷：乌金汊");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("画卷：野鹤湫");
+            System.Windows.Forms.TreeNode treeNode25 = new System.Windows.Forms.TreeNode("画卷：闽越旧城");
+            System.Windows.Forms.TreeNode treeNode26 = new System.Windows.Forms.TreeNode("画卷：淬剑清谷");
+            System.Windows.Forms.TreeNode treeNode27 = new System.Windows.Forms.TreeNode("画卷：风雨钱塘");
+            System.Windows.Forms.TreeNode treeNode28 = new System.Windows.Forms.TreeNode("画卷：吴王陵");
+            System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("画卷：百里荡");
+            System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("画卷：东平郡王府");
+            System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("画卷：雷峰夕照");
+            System.Windows.Forms.TreeNode treeNode32 = new System.Windows.Forms.TreeNode("画卷：藏锋谷");
+            System.Windows.Forms.TreeNode treeNode33 = new System.Windows.Forms.TreeNode("画卷：燕来镇");
+            System.Windows.Forms.TreeNode treeNode34 = new System.Windows.Forms.TreeNode("画卷：送君廊");
+            System.Windows.Forms.TreeNode treeNode35 = new System.Windows.Forms.TreeNode("画卷：得意坊");
+            System.Windows.Forms.TreeNode treeNode36 = new System.Windows.Forms.TreeNode("画卷：化清古佛");
+            System.Windows.Forms.TreeNode treeNode37 = new System.Windows.Forms.TreeNode("画卷：离魂峡");
+            System.Windows.Forms.TreeNode treeNode38 = new System.Windows.Forms.TreeNode("画卷：孔雀山庄");
+            System.Windows.Forms.TreeNode treeNode39 = new System.Windows.Forms.TreeNode("画卷：芳华谷");
+            System.Windows.Forms.TreeNode treeNode40 = new System.Windows.Forms.TreeNode("画卷：血衣楼");
+            System.Windows.Forms.TreeNode treeNode41 = new System.Windows.Forms.TreeNode("画卷：血衣禁地");
+            System.Windows.Forms.TreeNode treeNode42 = new System.Windows.Forms.TreeNode("画卷：平阳驿站");
+            System.Windows.Forms.TreeNode treeNode43 = new System.Windows.Forms.TreeNode("画卷：藏月客栈");
+            System.Windows.Forms.TreeNode treeNode44 = new System.Windows.Forms.TreeNode("画卷：古陶镇");
+            System.Windows.Forms.TreeNode treeNode45 = new System.Windows.Forms.TreeNode("画卷：骅阳林");
+            System.Windows.Forms.TreeNode treeNode46 = new System.Windows.Forms.TreeNode("画卷：天龙古刹");
+            System.Windows.Forms.TreeNode treeNode47 = new System.Windows.Forms.TreeNode("画卷：剑绝轩");
+            System.Windows.Forms.TreeNode treeNode48 = new System.Windows.Forms.TreeNode("画卷：玄刀断剑");
+            System.Windows.Forms.TreeNode treeNode49 = new System.Windows.Forms.TreeNode("画卷：望断斜阳");
+            System.Windows.Forms.TreeNode treeNode50 = new System.Windows.Forms.TreeNode("画卷：开封城门");
+            System.Windows.Forms.TreeNode treeNode51 = new System.Windows.Forms.TreeNode("画卷：护龙河");
+            System.Windows.Forms.TreeNode treeNode52 = new System.Windows.Forms.TreeNode("画卷：朱仙镇");
+            System.Windows.Forms.TreeNode treeNode53 = new System.Windows.Forms.TreeNode("画卷：相国寺");
+            System.Windows.Forms.TreeNode treeNode54 = new System.Windows.Forms.TreeNode("画卷：开封城");
+            System.Windows.Forms.TreeNode treeNode55 = new System.Windows.Forms.TreeNode("画卷：居士林");
+            System.Windows.Forms.TreeNode treeNode56 = new System.Windows.Forms.TreeNode("画卷：飞霞渡");
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("画卷：百鬼夜哭");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("画卷：论剑峰");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("画卷：药王谷");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("画卷：论剑坪");
+            System.Windows.Forms.TreeNode treeNode61 = new System.Windows.Forms.TreeNode("画卷：鹦哥镇");
+            System.Windows.Forms.TreeNode treeNode62 = new System.Windows.Forms.TreeNode("画卷：太白山门");
+            System.Windows.Forms.TreeNode treeNode63 = new System.Windows.Forms.TreeNode("画卷：玉泉院");
+            System.Windows.Forms.TreeNode treeNode64 = new System.Windows.Forms.TreeNode("画卷：秦川云海");
+            System.Windows.Forms.TreeNode treeNode65 = new System.Windows.Forms.TreeNode("画卷：万剑沉浮");
+            System.Windows.Forms.TreeNode treeNode66 = new System.Windows.Forms.TreeNode("画卷：瀚海戈壁");
+            System.Windows.Forms.TreeNode treeNode67 = new System.Windows.Forms.TreeNode("画卷：神木谷");
+            System.Windows.Forms.TreeNode treeNode68 = new System.Windows.Forms.TreeNode("画卷：苍梧城");
+            System.Windows.Forms.TreeNode treeNode69 = new System.Windows.Forms.TreeNode("画卷：风飞谷");
+            System.Windows.Forms.TreeNode treeNode70 = new System.Windows.Forms.TreeNode("画卷：月下饮马");
+            System.Windows.Forms.TreeNode treeNode71 = new System.Windows.Forms.TreeNode("画卷：策马坡");
+            System.Windows.Forms.TreeNode treeNode72 = new System.Windows.Forms.TreeNode("画卷：绝尘马场");
+            System.Windows.Forms.TreeNode treeNode73 = new System.Windows.Forms.TreeNode("画卷：燕云神威");
+            System.Windows.Forms.TreeNode treeNode74 = new System.Windows.Forms.TreeNode("画卷：怪石黑风");
+            System.Windows.Forms.TreeNode treeNode75 = new System.Windows.Forms.TreeNode("画卷：云来镇");
+            System.Windows.Forms.TreeNode treeNode76 = new System.Windows.Forms.TreeNode("画卷：逢捷镇");
+            System.Windows.Forms.TreeNode treeNode77 = new System.Windows.Forms.TreeNode("画卷：凌云壁");
+            System.Windows.Forms.TreeNode treeNode78 = new System.Windows.Forms.TreeNode("画卷：醉月居");
+            System.Windows.Forms.TreeNode treeNode79 = new System.Windows.Forms.TreeNode("画卷：御风堂");
+            System.Windows.Forms.TreeNode treeNode80 = new System.Windows.Forms.TreeNode("画卷：万青竹海");
+            System.Windows.Forms.TreeNode treeNode81 = new System.Windows.Forms.TreeNode("画卷：翠海");
+            System.Windows.Forms.TreeNode treeNode82 = new System.Windows.Forms.TreeNode("画卷：忘忧谷");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBoxSelect = new System.Windows.Forms.GroupBox();
@@ -300,22 +300,22 @@
             this.treeViewHZL.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewHZL.Location = new System.Drawing.Point(4, 34);
             this.treeViewHZL.Name = "treeViewHZL";
-            treeNode83.Name = "节点0";
-            treeNode83.Text = "画卷：杭州城";
-            treeNode84.Name = "节点1";
-            treeNode84.Text = "画卷：一醉轩";
-            treeNode85.Name = "节点2";
-            treeNode85.Text = "画卷：三潭印月";
-            treeNode86.Name = "节点3";
-            treeNode86.Text = "画卷：问道台";
-            treeNode87.Name = "节点4";
-            treeNode87.Text = "画卷：天绝禅院";
+            treeNode1.Name = "节点0";
+            treeNode1.Text = "画卷：杭州城";
+            treeNode2.Name = "节点1";
+            treeNode2.Text = "画卷：一醉轩";
+            treeNode3.Name = "节点2";
+            treeNode3.Text = "画卷：三潭印月";
+            treeNode4.Name = "节点3";
+            treeNode4.Text = "画卷：问道台";
+            treeNode5.Name = "节点4";
+            treeNode5.Text = "画卷：天绝禅院";
             this.treeViewHZL.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode83,
-            treeNode84,
-            treeNode85,
-            treeNode86,
-            treeNode87});
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4,
+            treeNode5});
             this.treeViewHZL.ShowLines = false;
             this.treeViewHZL.Size = new System.Drawing.Size(230, 92);
             this.treeViewHZL.TabIndex = 1;
@@ -391,34 +391,34 @@
             this.treeViewJN.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewJN.Location = new System.Drawing.Point(4, 34);
             this.treeViewJN.Name = "treeViewJN";
-            treeNode88.Name = "画卷：龙井茶园";
-            treeNode88.Text = "画卷：龙井茶园";
-            treeNode89.Name = "画卷：四明书院";
-            treeNode89.Text = "画卷：四明书院";
-            treeNode90.Name = "画卷：连环坞";
-            treeNode90.Text = "画卷：连环坞";
-            treeNode91.Name = "画卷：长风林";
-            treeNode91.Text = "画卷：长风林";
-            treeNode92.Name = "画卷：天泉日出";
-            treeNode92.Text = "画卷：天泉日出";
-            treeNode93.Name = "画卷：飞雪滩";
-            treeNode93.Text = "画卷：飞雪滩";
-            treeNode94.Name = "画卷：霹雳堂旧址";
-            treeNode94.Text = "画卷：霹雳堂旧址";
-            treeNode95.Name = "画卷：铸神谷";
-            treeNode95.Text = "画卷：铸神谷";
-            treeNode96.Name = "画卷：枫桥夜泊";
-            treeNode96.Text = "画卷：枫桥夜泊";
+            treeNode6.Name = "画卷：龙井茶园";
+            treeNode6.Text = "画卷：龙井茶园";
+            treeNode7.Name = "画卷：四明书院";
+            treeNode7.Text = "画卷：四明书院";
+            treeNode8.Name = "画卷：连环坞";
+            treeNode8.Text = "画卷：连环坞";
+            treeNode9.Name = "画卷：长风林";
+            treeNode9.Text = "画卷：长风林";
+            treeNode10.Name = "画卷：天泉日出";
+            treeNode10.Text = "画卷：天泉日出";
+            treeNode11.Name = "画卷：飞雪滩";
+            treeNode11.Text = "画卷：飞雪滩";
+            treeNode12.Name = "画卷：霹雳堂旧址";
+            treeNode12.Text = "画卷：霹雳堂旧址";
+            treeNode13.Name = "画卷：铸神谷";
+            treeNode13.Text = "画卷：铸神谷";
+            treeNode14.Name = "画卷：枫桥夜泊";
+            treeNode14.Text = "画卷：枫桥夜泊";
             this.treeViewJN.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode88,
-            treeNode89,
-            treeNode90,
-            treeNode91,
-            treeNode92,
-            treeNode93,
-            treeNode94,
-            treeNode95,
-            treeNode96});
+            treeNode6,
+            treeNode7,
+            treeNode8,
+            treeNode9,
+            treeNode10,
+            treeNode11,
+            treeNode12,
+            treeNode13,
+            treeNode14});
             this.treeViewJN.ShowLines = false;
             this.treeViewJN.Size = new System.Drawing.Size(230, 164);
             this.treeViewJN.TabIndex = 1;
@@ -494,40 +494,40 @@
             this.treeViewDY.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewDY.Location = new System.Drawing.Point(4, 34);
             this.treeViewDY.Name = "treeViewDY";
-            treeNode97.Name = "画卷：桃源道观";
-            treeNode97.Text = "画卷：桃源道观";
-            treeNode98.Name = "画卷：云泥梯田";
-            treeNode98.Text = "画卷：云泥梯田";
-            treeNode99.Name = "画卷：宁海镇";
-            treeNode99.Text = "画卷：宁海镇";
-            treeNode100.Name = "画卷：长乐滩";
-            treeNode100.Text = "画卷：长乐滩";
-            treeNode101.Name = "画卷：桑楚山庄";
-            treeNode101.Text = "画卷：桑楚山庄";
-            treeNode102.Name = "画卷：万象门";
-            treeNode102.Text = "画卷：万象门";
-            treeNode103.Name = "画卷：清永民居";
-            treeNode103.Text = "画卷：清永民居";
-            treeNode104.Name = "画卷：天香谷";
-            treeNode104.Text = "画卷：天香谷";
-            treeNode105.Name = "画卷：乌金汊";
-            treeNode105.Text = "画卷：乌金汊";
-            treeNode106.Name = "画卷：野鹤湫";
-            treeNode106.Text = "画卷：野鹤湫";
-            treeNode107.Name = "画卷：闽越旧城";
-            treeNode107.Text = "画卷：闽越旧城";
+            treeNode15.Name = "画卷：桃源道观";
+            treeNode15.Text = "画卷：桃源道观";
+            treeNode16.Name = "画卷：云泥梯田";
+            treeNode16.Text = "画卷：云泥梯田";
+            treeNode17.Name = "画卷：宁海镇";
+            treeNode17.Text = "画卷：宁海镇";
+            treeNode18.Name = "画卷：长乐滩";
+            treeNode18.Text = "画卷：长乐滩";
+            treeNode19.Name = "画卷：桑楚山庄";
+            treeNode19.Text = "画卷：桑楚山庄";
+            treeNode20.Name = "画卷：万象门";
+            treeNode20.Text = "画卷：万象门";
+            treeNode21.Name = "画卷：清永民居";
+            treeNode21.Text = "画卷：清永民居";
+            treeNode22.Name = "画卷：天香谷";
+            treeNode22.Text = "画卷：天香谷";
+            treeNode23.Name = "画卷：乌金汊";
+            treeNode23.Text = "画卷：乌金汊";
+            treeNode24.Name = "画卷：野鹤湫";
+            treeNode24.Text = "画卷：野鹤湫";
+            treeNode25.Name = "画卷：闽越旧城";
+            treeNode25.Text = "画卷：闽越旧城";
             this.treeViewDY.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode97,
-            treeNode98,
-            treeNode99,
-            treeNode100,
-            treeNode101,
-            treeNode102,
-            treeNode103,
-            treeNode104,
-            treeNode105,
-            treeNode106,
-            treeNode107});
+            treeNode15,
+            treeNode16,
+            treeNode17,
+            treeNode18,
+            treeNode19,
+            treeNode20,
+            treeNode21,
+            treeNode22,
+            treeNode23,
+            treeNode24,
+            treeNode25});
             this.treeViewDY.ShowLines = false;
             this.treeViewDY.Size = new System.Drawing.Size(230, 200);
             this.treeViewDY.TabIndex = 1;
@@ -603,25 +603,25 @@
             this.treeViewHZH.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewHZH.Location = new System.Drawing.Point(4, 34);
             this.treeViewHZH.Name = "treeViewHZH";
-            treeNode108.Name = "画卷：淬剑清谷";
-            treeNode108.Text = "画卷：淬剑清谷";
-            treeNode109.Name = "画卷：风雨钱塘";
-            treeNode109.Text = "画卷：风雨钱塘";
-            treeNode110.Name = "画卷：吴王陵";
-            treeNode110.Text = "画卷：吴王陵";
-            treeNode111.Name = "画卷：百里荡";
-            treeNode111.Text = "画卷：百里荡";
-            treeNode112.Name = "画卷：东平郡王府";
-            treeNode112.Text = "画卷：东平郡王府";
-            treeNode113.Name = "画卷：雷峰夕照";
-            treeNode113.Text = "画卷：雷峰夕照";
+            treeNode26.Name = "画卷：淬剑清谷";
+            treeNode26.Text = "画卷：淬剑清谷";
+            treeNode27.Name = "画卷：风雨钱塘";
+            treeNode27.Text = "画卷：风雨钱塘";
+            treeNode28.Name = "画卷：吴王陵";
+            treeNode28.Text = "画卷：吴王陵";
+            treeNode29.Name = "画卷：百里荡";
+            treeNode29.Text = "画卷：百里荡";
+            treeNode30.Name = "画卷：东平郡王府";
+            treeNode30.Text = "画卷：东平郡王府";
+            treeNode31.Name = "画卷：雷峰夕照";
+            treeNode31.Text = "画卷：雷峰夕照";
             this.treeViewHZH.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode108,
-            treeNode109,
-            treeNode110,
-            treeNode111,
-            treeNode112,
-            treeNode113});
+            treeNode26,
+            treeNode27,
+            treeNode28,
+            treeNode29,
+            treeNode30,
+            treeNode31});
             this.treeViewHZH.ShowLines = false;
             this.treeViewHZH.Size = new System.Drawing.Size(230, 110);
             this.treeViewHZH.TabIndex = 1;
@@ -697,37 +697,37 @@
             this.treeViewJH.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewJH.Location = new System.Drawing.Point(4, 34);
             this.treeViewJH.Name = "treeViewJH";
-            treeNode114.Name = "画卷：藏锋谷";
-            treeNode114.Text = "画卷：藏锋谷";
-            treeNode115.Name = "画卷：燕来镇";
-            treeNode115.Text = "画卷：燕来镇";
-            treeNode116.Name = "画卷：送君廊";
-            treeNode116.Text = "画卷：送君廊";
-            treeNode117.Name = "画卷：得意坊";
-            treeNode117.Text = "画卷：得意坊";
-            treeNode118.Name = "画卷：化清古佛";
-            treeNode118.Text = "画卷：化清古佛";
-            treeNode119.Name = "画卷：离魂峡";
-            treeNode119.Text = "画卷：离魂峡";
-            treeNode120.Name = "画卷：孔雀山庄";
-            treeNode120.Text = "画卷：孔雀山庄";
-            treeNode121.Name = "画卷：芳华谷";
-            treeNode121.Text = "画卷：芳华谷";
-            treeNode122.Name = "画卷：血衣楼";
-            treeNode122.Text = "画卷：血衣楼";
-            treeNode123.Name = "画卷：血衣禁地";
-            treeNode123.Text = "画卷：血衣禁地";
+            treeNode32.Name = "画卷：藏锋谷";
+            treeNode32.Text = "画卷：藏锋谷";
+            treeNode33.Name = "画卷：燕来镇";
+            treeNode33.Text = "画卷：燕来镇";
+            treeNode34.Name = "画卷：送君廊";
+            treeNode34.Text = "画卷：送君廊";
+            treeNode35.Name = "画卷：得意坊";
+            treeNode35.Text = "画卷：得意坊";
+            treeNode36.Name = "画卷：化清古佛";
+            treeNode36.Text = "画卷：化清古佛";
+            treeNode37.Name = "画卷：离魂峡";
+            treeNode37.Text = "画卷：离魂峡";
+            treeNode38.Name = "画卷：孔雀山庄";
+            treeNode38.Text = "画卷：孔雀山庄";
+            treeNode39.Name = "画卷：芳华谷";
+            treeNode39.Text = "画卷：芳华谷";
+            treeNode40.Name = "画卷：血衣楼";
+            treeNode40.Text = "画卷：血衣楼";
+            treeNode41.Name = "画卷：血衣禁地";
+            treeNode41.Text = "画卷：血衣禁地";
             this.treeViewJH.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode114,
-            treeNode115,
-            treeNode116,
-            treeNode117,
-            treeNode118,
-            treeNode119,
-            treeNode120,
-            treeNode121,
-            treeNode122,
-            treeNode123});
+            treeNode32,
+            treeNode33,
+            treeNode34,
+            treeNode35,
+            treeNode36,
+            treeNode37,
+            treeNode38,
+            treeNode39,
+            treeNode40,
+            treeNode41});
             this.treeViewJH.ShowLines = false;
             this.treeViewJH.Size = new System.Drawing.Size(230, 182);
             this.treeViewJH.TabIndex = 1;
@@ -803,31 +803,31 @@
             this.treeViewXH.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewXH.Location = new System.Drawing.Point(4, 34);
             this.treeViewXH.Name = "treeViewXH";
-            treeNode124.Name = "画卷：平阳驿站";
-            treeNode124.Text = "画卷：平阳驿站";
-            treeNode125.Name = "画卷：藏月客栈";
-            treeNode125.Text = "画卷：藏月客栈";
-            treeNode126.Name = "画卷：古陶镇";
-            treeNode126.Text = "画卷：古陶镇";
-            treeNode127.Name = "画卷：骅阳林";
-            treeNode127.Text = "画卷：骅阳林";
-            treeNode128.Name = "画卷：天龙古刹";
-            treeNode128.Text = "画卷：天龙古刹";
-            treeNode129.Name = "画卷：剑绝轩";
-            treeNode129.Text = "画卷：剑绝轩";
-            treeNode130.Name = "画卷：玄刀断剑";
-            treeNode130.Text = "画卷：玄刀断剑";
-            treeNode131.Name = "画卷：望断斜阳";
-            treeNode131.Text = "画卷：望断斜阳";
+            treeNode42.Name = "画卷：平阳驿站";
+            treeNode42.Text = "画卷：平阳驿站";
+            treeNode43.Name = "画卷：藏月客栈";
+            treeNode43.Text = "画卷：藏月客栈";
+            treeNode44.Name = "画卷：古陶镇";
+            treeNode44.Text = "画卷：古陶镇";
+            treeNode45.Name = "画卷：骅阳林";
+            treeNode45.Text = "画卷：骅阳林";
+            treeNode46.Name = "画卷：天龙古刹";
+            treeNode46.Text = "画卷：天龙古刹";
+            treeNode47.Name = "画卷：剑绝轩";
+            treeNode47.Text = "画卷：剑绝轩";
+            treeNode48.Name = "画卷：玄刀断剑";
+            treeNode48.Text = "画卷：玄刀断剑";
+            treeNode49.Name = "画卷：望断斜阳";
+            treeNode49.Text = "画卷：望断斜阳";
             this.treeViewXH.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode124,
-            treeNode125,
-            treeNode126,
-            treeNode127,
-            treeNode128,
-            treeNode129,
-            treeNode130,
-            treeNode131});
+            treeNode42,
+            treeNode43,
+            treeNode44,
+            treeNode45,
+            treeNode46,
+            treeNode47,
+            treeNode48,
+            treeNode49});
             this.treeViewXH.ShowLines = false;
             this.treeViewXH.Size = new System.Drawing.Size(230, 146);
             this.treeViewXH.TabIndex = 1;
@@ -903,31 +903,31 @@
             this.treeViewKF.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewKF.Location = new System.Drawing.Point(4, 34);
             this.treeViewKF.Name = "treeViewKF";
-            treeNode132.Name = "画卷：开封城门";
-            treeNode132.Text = "画卷：开封城门";
-            treeNode133.Name = "画卷：护龙河";
-            treeNode133.Text = "画卷：护龙河";
-            treeNode134.Name = "画卷：朱仙镇";
-            treeNode134.Text = "画卷：朱仙镇";
-            treeNode135.Name = "画卷：相国寺";
-            treeNode135.Text = "画卷：相国寺";
-            treeNode136.Name = "画卷：开封城";
-            treeNode136.Text = "画卷：开封城";
-            treeNode137.Name = "画卷：居士林";
-            treeNode137.Text = "画卷：居士林";
-            treeNode138.Name = "画卷：飞霞渡";
-            treeNode138.Text = "画卷：飞霞渡";
-            treeNode139.Name = "画卷：百鬼夜哭";
-            treeNode139.Text = "画卷：百鬼夜哭";
+            treeNode50.Name = "画卷：开封城门";
+            treeNode50.Text = "画卷：开封城门";
+            treeNode51.Name = "画卷：护龙河";
+            treeNode51.Text = "画卷：护龙河";
+            treeNode52.Name = "画卷：朱仙镇";
+            treeNode52.Text = "画卷：朱仙镇";
+            treeNode53.Name = "画卷：相国寺";
+            treeNode53.Text = "画卷：相国寺";
+            treeNode54.Name = "画卷：开封城";
+            treeNode54.Text = "画卷：开封城";
+            treeNode55.Name = "画卷：居士林";
+            treeNode55.Text = "画卷：居士林";
+            treeNode56.Name = "画卷：飞霞渡";
+            treeNode56.Text = "画卷：飞霞渡";
+            treeNode57.Name = "画卷：百鬼夜哭";
+            treeNode57.Text = "画卷：百鬼夜哭";
             this.treeViewKF.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode132,
-            treeNode133,
-            treeNode134,
-            treeNode135,
-            treeNode136,
-            treeNode137,
-            treeNode138,
-            treeNode139});
+            treeNode50,
+            treeNode51,
+            treeNode52,
+            treeNode53,
+            treeNode54,
+            treeNode55,
+            treeNode56,
+            treeNode57});
             this.treeViewKF.ShowLines = false;
             this.treeViewKF.Size = new System.Drawing.Size(230, 146);
             this.treeViewKF.TabIndex = 1;
@@ -1003,31 +1003,31 @@
             this.treeViewQC.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewQC.Location = new System.Drawing.Point(4, 34);
             this.treeViewQC.Name = "treeViewQC";
-            treeNode140.Name = "画卷：论剑峰";
-            treeNode140.Text = "画卷：论剑峰";
-            treeNode141.Name = "画卷：药王谷";
-            treeNode141.Text = "画卷：药王谷";
-            treeNode142.Name = "画卷：论剑坪";
-            treeNode142.Text = "画卷：论剑坪";
-            treeNode143.Name = "画卷：鹦哥镇";
-            treeNode143.Text = "画卷：鹦哥镇";
-            treeNode144.Name = "画卷：太白山门";
-            treeNode144.Text = "画卷：太白山门";
-            treeNode145.Name = "画卷：玉泉院";
-            treeNode145.Text = "画卷：玉泉院";
-            treeNode146.Name = "画卷：秦川云海";
-            treeNode146.Text = "画卷：秦川云海";
-            treeNode147.Name = "画卷：万剑沉浮";
-            treeNode147.Text = "画卷：万剑沉浮";
+            treeNode58.Name = "画卷：论剑峰";
+            treeNode58.Text = "画卷：论剑峰";
+            treeNode59.Name = "画卷：药王谷";
+            treeNode59.Text = "画卷：药王谷";
+            treeNode60.Name = "画卷：论剑坪";
+            treeNode60.Text = "画卷：论剑坪";
+            treeNode61.Name = "画卷：鹦哥镇";
+            treeNode61.Text = "画卷：鹦哥镇";
+            treeNode62.Name = "画卷：太白山门";
+            treeNode62.Text = "画卷：太白山门";
+            treeNode63.Name = "画卷：玉泉院";
+            treeNode63.Text = "画卷：玉泉院";
+            treeNode64.Name = "画卷：秦川云海";
+            treeNode64.Text = "画卷：秦川云海";
+            treeNode65.Name = "画卷：万剑沉浮";
+            treeNode65.Text = "画卷：万剑沉浮";
             this.treeViewQC.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode140,
-            treeNode141,
-            treeNode142,
-            treeNode143,
-            treeNode144,
-            treeNode145,
-            treeNode146,
-            treeNode147});
+            treeNode58,
+            treeNode59,
+            treeNode60,
+            treeNode61,
+            treeNode62,
+            treeNode63,
+            treeNode64,
+            treeNode65});
             this.treeViewQC.ShowLines = false;
             this.treeViewQC.Size = new System.Drawing.Size(230, 146);
             this.treeViewQC.TabIndex = 1;
@@ -1103,34 +1103,34 @@
             this.treeViewYY.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewYY.Location = new System.Drawing.Point(4, 34);
             this.treeViewYY.Name = "treeViewYY";
-            treeNode148.Name = "画卷：瀚海戈壁";
-            treeNode148.Text = "画卷：瀚海戈壁";
-            treeNode149.Name = "画卷：神木谷";
-            treeNode149.Text = "画卷：神木谷";
-            treeNode150.Name = "画卷：苍梧城";
-            treeNode150.Text = "画卷：苍梧城";
-            treeNode151.Name = "画卷：风飞谷";
-            treeNode151.Text = "画卷：风飞谷";
-            treeNode152.Name = "画卷：月下饮马";
-            treeNode152.Text = "画卷：月下饮马";
-            treeNode153.Name = "画卷：策马坡";
-            treeNode153.Text = "画卷：策马坡";
-            treeNode154.Name = "画卷：绝尘马场";
-            treeNode154.Text = "画卷：绝尘马场";
-            treeNode155.Name = "画卷：燕云神威";
-            treeNode155.Text = "画卷：燕云神威";
-            treeNode156.Name = "画卷：怪石黑风";
-            treeNode156.Text = "画卷：怪石黑风";
+            treeNode66.Name = "画卷：瀚海戈壁";
+            treeNode66.Text = "画卷：瀚海戈壁";
+            treeNode67.Name = "画卷：神木谷";
+            treeNode67.Text = "画卷：神木谷";
+            treeNode68.Name = "画卷：苍梧城";
+            treeNode68.Text = "画卷：苍梧城";
+            treeNode69.Name = "画卷：风飞谷";
+            treeNode69.Text = "画卷：风飞谷";
+            treeNode70.Name = "画卷：月下饮马";
+            treeNode70.Text = "画卷：月下饮马";
+            treeNode71.Name = "画卷：策马坡";
+            treeNode71.Text = "画卷：策马坡";
+            treeNode72.Name = "画卷：绝尘马场";
+            treeNode72.Text = "画卷：绝尘马场";
+            treeNode73.Name = "画卷：燕云神威";
+            treeNode73.Text = "画卷：燕云神威";
+            treeNode74.Name = "画卷：怪石黑风";
+            treeNode74.Text = "画卷：怪石黑风";
             this.treeViewYY.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode148,
-            treeNode149,
-            treeNode150,
-            treeNode151,
-            treeNode152,
-            treeNode153,
-            treeNode154,
-            treeNode155,
-            treeNode156});
+            treeNode66,
+            treeNode67,
+            treeNode68,
+            treeNode69,
+            treeNode70,
+            treeNode71,
+            treeNode72,
+            treeNode73,
+            treeNode74});
             this.treeViewYY.ShowLines = false;
             this.treeViewYY.Size = new System.Drawing.Size(230, 164);
             this.treeViewYY.TabIndex = 1;
@@ -1206,31 +1206,31 @@
             this.treeViewBS.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.treeViewBS.Location = new System.Drawing.Point(4, 34);
             this.treeViewBS.Name = "treeViewBS";
-            treeNode157.Name = "画卷：云来镇";
-            treeNode157.Text = "画卷：云来镇";
-            treeNode158.Name = "画卷：逢捷镇";
-            treeNode158.Text = "画卷：逢捷镇";
-            treeNode159.Name = "画卷：凌云壁";
-            treeNode159.Text = "画卷：凌云壁";
-            treeNode160.Name = "画卷：醉月居";
-            treeNode160.Text = "画卷：醉月居";
-            treeNode161.Name = "画卷：御风堂";
-            treeNode161.Text = "画卷：御风堂";
-            treeNode162.Name = "画卷：万青竹海";
-            treeNode162.Text = "画卷：万青竹海";
-            treeNode163.Name = "画卷：翠海";
-            treeNode163.Text = "画卷：翠海";
-            treeNode164.Name = "画卷：忘忧谷";
-            treeNode164.Text = "画卷：忘忧谷";
+            treeNode75.Name = "画卷：云来镇";
+            treeNode75.Text = "画卷：云来镇";
+            treeNode76.Name = "画卷：逢捷镇";
+            treeNode76.Text = "画卷：逢捷镇";
+            treeNode77.Name = "画卷：凌云壁";
+            treeNode77.Text = "画卷：凌云壁";
+            treeNode78.Name = "画卷：醉月居";
+            treeNode78.Text = "画卷：醉月居";
+            treeNode79.Name = "画卷：御风堂";
+            treeNode79.Text = "画卷：御风堂";
+            treeNode80.Name = "画卷：万青竹海";
+            treeNode80.Text = "画卷：万青竹海";
+            treeNode81.Name = "画卷：翠海";
+            treeNode81.Text = "画卷：翠海";
+            treeNode82.Name = "画卷：忘忧谷";
+            treeNode82.Text = "画卷：忘忧谷";
             this.treeViewBS.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode157,
-            treeNode158,
-            treeNode159,
-            treeNode160,
-            treeNode161,
-            treeNode162,
-            treeNode163,
-            treeNode164});
+            treeNode75,
+            treeNode76,
+            treeNode77,
+            treeNode78,
+            treeNode79,
+            treeNode80,
+            treeNode81,
+            treeNode82});
             this.treeViewBS.ShowLines = false;
             this.treeViewBS.Size = new System.Drawing.Size(230, 146);
             this.treeViewBS.TabIndex = 1;
@@ -1425,7 +1425,7 @@
             // 
             // labelEndTime
             // 
-            this.labelEndTime.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelEndTime.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelEndTime.ForeColor = System.Drawing.Color.Blue;
             this.labelEndTime.Location = new System.Drawing.Point(15, 144);
             this.labelEndTime.Name = "labelEndTime";
@@ -1446,7 +1446,7 @@
             // 
             // labelGameTime
             // 
-            this.labelGameTime.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelGameTime.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelGameTime.ForeColor = System.Drawing.Color.Blue;
             this.labelGameTime.Location = new System.Drawing.Point(15, 48);
             this.labelGameTime.Name = "labelGameTime";
@@ -1467,7 +1467,7 @@
             // 
             // labelNowTime
             // 
-            this.labelNowTime.Font = new System.Drawing.Font("黑体", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNowTime.Font = new System.Drawing.Font("黑体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.labelNowTime.ForeColor = System.Drawing.Color.Blue;
             this.labelNowTime.Location = new System.Drawing.Point(15, 96);
             this.labelNowTime.Name = "labelNowTime";
@@ -1478,7 +1478,6 @@
             // 
             // labelText2
             // 
-            this.labelText2.ForeColor = System.Drawing.SystemColors.ControlText;
             this.labelText2.Location = new System.Drawing.Point(15, 24);
             this.labelText2.Name = "labelText2";
             this.labelText2.Size = new System.Drawing.Size(140, 20);

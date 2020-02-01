@@ -13,13 +13,11 @@ namespace 天刀墨宝闹钟
 {
     public partial class FormReminder : Form
     {
+        public int fatherFormXPos;
+        public int fatherFormYPos;
         public FormReminder()
         {
             InitializeComponent();
-
-            var newColor = Color.FromArgb(0, 255, 0);
-            BackColor = newColor;
-            TransparencyKey = newColor;
         }
 
         //隐藏Alt+Tab显示
@@ -35,14 +33,15 @@ namespace 天刀墨宝闹钟
 
         private void FormReminder_Load(object sender, EventArgs e)
         {
-            var x = Screen.PrimaryScreen.Bounds.Width - Width - 10;
-            var y = Screen.PrimaryScreen.Bounds.Height - Height - 80;
+            var x = fatherFormXPos-Width;
+            var y = fatherFormYPos-Height+63;
             Location = new Point(x, y);
         }
 
         public void UpdateForm(List<string[]> list)
         {
             Visible = false;
+            flowLayoutPanel1.Visible = false;
             flowLayoutPanel1.Controls.Clear();
             if (list.Count==0)
             {
@@ -55,11 +54,12 @@ namespace 天刀墨宝闹钟
 
                 Height = 24;
 
-                var x = Screen.PrimaryScreen.Bounds.Width - Width - 10;
-                var y = Screen.PrimaryScreen.Bounds.Height - Height - 80;
+                var x = Screen.PrimaryScreen.Bounds.Width - Width - 20;
+                var y =  Height - 150;
                 Location = new Point(x, y);
 
                 Visible = true;
+                flowLayoutPanel1.Visible = true;
             }
             else
             {
@@ -72,16 +72,19 @@ namespace 天刀墨宝闹钟
                     newLaber.Text = $"【{item[0]}】【{item[1]}】";
                     newLaber.Font = flowLayoutPanel1.Font;
                     newLaber.AutoSize = true;
+                    newLaber.ForeColor = Color.FromArgb(0, 254, 0);
+                    //Console.WriteLine(newLaber.ForeColor.ToString());
                     flowLayoutPanel1.Controls.Add(newLaber);
                     count++;
                 }
                 Height = 24 * count;
 
-                var x = Screen.PrimaryScreen.Bounds.Width - Width - 10;
-                var y = Screen.PrimaryScreen.Bounds.Height - Height - 80;
+                var x = fatherFormXPos - Width;
+                var y = fatherFormYPos - Height + 63;
                 Location = new Point(x, y);
 
                 Visible = true;
+                flowLayoutPanel1.Visible = true;
             }
         }
     }
