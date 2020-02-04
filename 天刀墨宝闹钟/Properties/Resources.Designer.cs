@@ -93,9 +93,9 @@ namespace 天刀墨宝闹钟.Properties {
         /// <summary>
         ///   查找类似于 (图标) 的 System.Drawing.Icon 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Icon myIcon {
+        internal static System.Drawing.Icon Clock {
             get {
-                object obj = ResourceManager.GetObject("myIcon", resourceCulture);
+                object obj = ResourceManager.GetObject("Clock", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
         }

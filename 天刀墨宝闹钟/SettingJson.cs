@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace 天刀墨宝闹钟
 {
@@ -11,6 +12,7 @@ namespace 天刀墨宝闹钟
         public bool isUseBalloon { get; set; } 
         public bool isTimerRunning { get; set; } 
         public bool isUseReminderForm { get; set; } 
+        public bool isMergeBalloon { get; set; } 
         public Dictionary<string,bool> treeViewDic { get; set; }
 
     }
@@ -22,6 +24,7 @@ namespace 天刀墨宝闹钟
             isTimerRunning = false,
             isUseBalloon = false,
             isUseReminderForm = false,
+            isMergeBalloon = false,
             treeViewDic = new Dictionary<string, bool>()
                 {
                     {"画卷：杭州城", false},

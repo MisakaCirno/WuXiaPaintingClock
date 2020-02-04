@@ -15,6 +15,8 @@ namespace 天刀墨宝闹钟
     {
         public int fatherFormXPos;
         public int fatherFormYPos;
+        Color reminderFontColor = Color.FromArgb(0,254,0);
+
         public FormReminder()
         {
             InitializeComponent();
@@ -72,7 +74,7 @@ namespace 天刀墨宝闹钟
                     newLaber.Text = $"【{item[0]}】【{item[1]}】";
                     newLaber.Font = flowLayoutPanel1.Font;
                     newLaber.AutoSize = true;
-                    newLaber.ForeColor = Color.FromArgb(0, 254, 0);
+                    newLaber.ForeColor = reminderFontColor;
                     //Console.WriteLine(newLaber.ForeColor.ToString());
                     flowLayoutPanel1.Controls.Add(newLaber);
                     count++;

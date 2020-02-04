@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>my.ico</ApplicationIcon>
+    <ApplicationIcon>Clock.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -83,6 +83,12 @@
     <Compile Include="FormSwitch.Designer.cs">
       <DependentUpon>FormSwitch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTimeTable.Designer.cs">
+      <DependentUpon>FormTimeTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaintingDate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -101,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSwitch.resx">
       <DependentUpon>FormSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimeTable.resx">
+      <DependentUpon>FormTimeTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -128,19 +137,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\game.ico" />
-    <None Include="Resources\Icon1.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="my.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ButtonClick.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ButtonNormal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\测试.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ButtonOFF.png" />
@@ -152,13 +148,10 @@
     <None Include="Resources\ButtonPoint.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\icon_64_LongZhu_LingLongLu2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icon_64_ShiShiZhuangCaiLiao_XiQue.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\QQ图片20200131123329.jpg" />
+    <None Include="Resources\RedPoint.png" />
+    <None Include="Resources\Clock.ico" />
+    <Content Include="Clock.ico" />
+    <Content Include="TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

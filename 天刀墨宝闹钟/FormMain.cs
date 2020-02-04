@@ -16,7 +16,7 @@ namespace 天刀墨宝闹钟
 {
     public partial class FormMain : Form
     {
-        Dictionary<string, QueueElement> paintingQueue = new Dictionary<string, QueueElement>(); //监测的队列
+        public static Dictionary<string, QueueElement> paintingQueue = new Dictionary<string, QueueElement>(); //监测的队列
         Dictionary<string, TimeAndMapName> paintingData = new Dictionary<string, TimeAndMapName>
         {
             //杭州低级
@@ -118,21 +118,33 @@ namespace 天刀墨宝闹钟
 
         string prevChinaTime = "";
         string prevChinaTimeDayAndNight = "";
-        string nowChinaTime = "";
+        public static string nowChinaTime = "";
         string nowChinaTimeDayAndNight = "";
         
         bool isNodeChecked; //用于判断是否选中
         bool isUseBalloon; //是否开启右下角弹窗提醒
+        bool isMergeBalloon; //是否合并右下角弹窗提示
+        bool isHaveNeedToShow; //是否有消息需要提示
         bool isUseReminderForm; //是否开启单独窗口提醒
         bool isTimerRunning; //是否开启时钟
         bool isUseMultiSelect; //是否使用了多选
+        public static bool isShowTimeTableForm; //是否开启了时间表窗口
 
-        FormSwitch formSwitch;//开关窗口
+        FormSwitch formSwitch; //开关窗口
+        FormTimeTable formTimeTable; //时间表窗口
 
+        Font listBoldFont = new Font("宋体", 12, FontStyle.Bold);
 
         private void AddPaintingToQueue (string name) //添加墨宝到监测的队列
         {
-            paintingQueue.Add(name, new QueueElement { paintingName = name, timeArray = paintingData[name].timeList, isUsable = false,mapName= paintingData[name].mapName });
+            paintingQueue.Add(name, 
+                new QueueElement 
+                { 
+                    paintingName = name, 
+                    timeArray = paintingData[name].timeList, 
+                    isUsable = false,
+                    mapName= paintingData[name].mapName 
+                });
         }
 
         private void RemovePaintingFromQueue(string name) //从检测队列中删除墨宝
@@ -143,10 +155,14 @@ namespace 天刀墨宝闹钟
         private void Inform(string name) //监测到后提醒
         {
             //Console.WriteLine($"墨宝：【{name}】现在已可以绘制");
-            if (isUseBalloon==true)
+            if (isUseBalloon)
             {
-                notifyIcon1.ShowBalloonTip(2000, "墨宝闹钟提示", $"【{name}】现在已可以绘制", ToolTipIcon.None);
+                notifyIcon1.ShowBalloonTip(1000, "墨宝闹钟提示", $"【{name}】现在已到绘制时辰", ToolTipIcon.None);
             }
+        }
+        private void Inform() //监测到后提醒
+        {
+            notifyIcon1.ShowBalloonTip(1000, "墨宝闹钟提示", $"已有墨宝已到绘制时辰", ToolTipIcon.None);
         }
 
         private void WriteDefaultConfig(string path) //生成默认配置文件
@@ -189,7 +205,10 @@ namespace 天刀墨宝闹钟
             checkBoxTimer.Checked = isTimerRunning;
 
             isUseBalloon = settings.isUseBalloon;
-            checkBoxRemind.Checked = isUseBalloon;
+            checkBoxInform.Checked = isUseBalloon;
+
+            isMergeBalloon = settings.isMergeBalloon;
+            checkBoxInformSetting.Checked = isMergeBalloon;
 
             isUseReminderForm = settings.isUseReminderForm;
             checkBoxGame.Checked = isUseReminderForm;
@@ -204,6 +223,7 @@ namespace 天刀墨宝闹钟
             saveJson.isTimerRunning = isTimerRunning;
             saveJson.isUseBalloon = isUseBalloon;
             saveJson.isUseReminderForm = isUseReminderForm;
+            saveJson.isMergeBalloon = isMergeBalloon;
             
             //遍历每块板子
             foreach (var panel in flowLayoutPanelSetting.Controls)
@@ -230,7 +250,7 @@ namespace 天刀墨宝闹钟
         public FormMain()
         {
             InitializeComponent();
-            Icon = Properties.Resources.myIcon;
+            Icon = Properties.Resources.Clock;
 
             //把按钮装到一个list里头，方便后面操作折叠展开
             buttonList = new List<Button>
@@ -255,9 +275,8 @@ namespace 天刀墨宝闹钟
             Text = "天刀墨宝闹钟 v1.1.0";
 
             notifyIcon1.Text = "天刀墨宝闹钟";
-            notifyIcon1.Icon = Properties.Resources.myIcon;
+            notifyIcon1.Icon = Properties.Resources.Clock;
             notifyIcon1.Visible = true;
-
         }
 
         
@@ -307,6 +326,7 @@ namespace 天刀墨宝闹钟
         private void CheckQueue() //检测并修改队列
         {
             reminderList.Clear();
+            isHaveNeedToShow = false;
 
             foreach (var item in paintingQueue) //遍历队列中的每一项
             {
@@ -319,7 +339,12 @@ namespace 天刀墨宝闹钟
                         if (time == nowChinaTimeDayAndNight)
                         {
                             item.Value.isUsable = true;
-                            Inform(item.Value.paintingName);
+                            //如果没有合并提示，那么就单独提示，否则就最后再提示一次
+                            if (isMergeBalloon== false)
+                            {
+                                Inform(item.Value.paintingName);
+                            }
+                            isHaveNeedToShow = true;
                             //如果开启了窗口提示功能，那么就添加队列
                             if (isUseReminderForm)
                             {
@@ -339,8 +364,12 @@ namespace 天刀墨宝闹钟
                         if (time == nowChinaTime) //如果现在时辰和书画时辰一致
                         {
                             item.Value.isUsable = true;
-                            Inform(item.Value.paintingName);
-
+                            //如果没有合并提示，那么就单独提示，否则就最后再提示一次
+                            if (isMergeBalloon == false)
+                            {
+                                Inform(item.Value.paintingName);
+                            }
+                            isHaveNeedToShow = true;
                             //如果开启了窗口提示功能，那么就添加队列
                             if (isUseReminderForm)
                             {
@@ -359,6 +388,16 @@ namespace 天刀墨宝闹钟
                     }
                 }
             }
+
+            if (isHaveNeedToShow && isMergeBalloon)
+            {
+                Inform();
+            }
+
+            if (isShowTimeTableForm)
+            {
+                formTimeTable.UpdateForm();
+            }
         }
 
         private void UpdateList() //更新ListView的内容
@@ -373,13 +412,13 @@ namespace 天刀墨宝闹钟
 
                 if (item.Value.isUsable)
                 {
-                    listViewItem.SubItems[0].Text = "时辰已到";
+                    listViewItem.SubItems[2].Text = "时辰已到";
                     listViewItem.ForeColor = Color.Green;
-                    listViewItem.Font = new Font(listViewShowQueue.Font, FontStyle.Bold);
+                    listViewItem.Font = listBoldFont;
                 }
                 else
                 {
-                    listViewItem.SubItems[0].Text = "时辰未到";
+                    listViewItem.SubItems[2].Text = "时辰未到";
                 }
 
                 listViewShowQueue.Items.Add(listViewItem);
@@ -661,15 +700,26 @@ namespace 天刀墨宝闹钟
             }
         }
 
-        private void checkBoxRemind_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxInform_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkBoxRemind.Checked==true)
+            if (checkBoxInform.Checked==true)
             {
                 isUseBalloon = true;
             }
             else
             {
                 isUseBalloon = false;
+            }
+        }
+        private void checkBoxInformSetting_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxInform.Checked == true)
+            {
+                isMergeBalloon = true;
+            }
+            else
+            {
+                isMergeBalloon = false;
             }
         }
 
@@ -695,66 +745,22 @@ namespace 天刀墨宝闹钟
             }
         }
 
-        private void buttonUseless_Click(object sender, EventArgs e)
+        private void buttonTimeTable_Click(object sender, EventArgs e)
         {
-
-            /*
-            Random random = new Random();
-            int index = random.Next(0, 15);
-            Console.WriteLine(index);
-            switch (index)
+            if (nowChinaTime=="")
             {
-                case 0:
-                    MessageBox.Show("都说了这个按钮没用了，你还点我干什么啊？");
-                    break;
-                case 1:
-                    MessageBox.Show("今天有多喝水吗？不要渴了才想着喝水哦~");
-                    break;
-                case 2:
-                    MessageBox.Show("坐在电脑面前时间太长可不好，记得适当休息一下！");
-                    break;
-                case 3:
-                    MessageBox.Show("推塔！推塔啊！我都带兵线过来了……哎？你什么时候进来的！快出去！");
-                    break;
-                case 4:
-                    MessageBox.Show("今天有没有和亲人们问好呢？");
-                    break;
-                case 5:
-                    MessageBox.Show("Zzzzzzzzz……");
-                    break;
-                case 6:
-                    MessageBox.Show("嘘！安静点！我打到决赛圈了！");
-                    MessageBox.Show("哎呀都怪你！本来能吃鸡的！");
-                    break;
-                case 7:
-                    MessageBox.Show("听说天刀里有个小师妹？有机会想和她PK一下看看谁更厉害。");
-                    break;
-                case 8:
-                    MessageBox.Show("帮派联盟委任交了吗？师妹行侠游历了吗？每天10个话本盒子拿了吗？活力清干净了吗？没有？没有没事戳我干什么？");
-                    break;
-                case 9:
-                    MessageBox.Show("贴吧又有新的818了，你要不要看看？");
-                    break;
-                case 10:
-                    MessageBox.Show("大象~大象~你的脖子为什么那么长~……！？你是不是听到了！！？？");
-                    break;
-                case 11:
-                    MessageBox.Show("据说骑马读条的时候使用大轻功会飞的很高哦？你试过吗？");
-                    break;
-                case 12:
-                    MessageBox.Show("家园的老管家、拍卖行边上的家园NPC、驻地里的守林人都可以卖掉杂货的~");
-                    break;
-                case 13:
-                    MessageBox.Show("天刀同人Show和微信公众号每周都有蚊子腿奖励，你领过了吗？");
-                    break;
-                case 14:
-                    MessageBox.Show("听说隔壁的小哥哥找了个男朋友？？");
-                    break;
-                default:
-                    MessageBox.Show("自闭中");
-                    break;
+                return;
             }
-            */
+
+            if (isShowTimeTableForm)
+            {
+                formTimeTable.Focus();
+                return;
+            }
+
+            formTimeTable = new FormTimeTable();
+            formTimeTable.Show();
+            isShowTimeTableForm = true;
         }
     }
 }
