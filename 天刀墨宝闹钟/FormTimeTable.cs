@@ -149,8 +149,9 @@ namespace 天刀墨宝闹钟
         FlowLayoutPanel modifiedFLP;
 
         bool isFirstLoad = true;
-
-        public FormTimeTable()
+        private static FormTimeTable formTimeTable;
+        private static bool isShowThisForm = false;
+        private FormTimeTable()
         {
             InitializeComponent();
             Icon = Properties.Resources.Clock;
@@ -198,6 +199,31 @@ namespace 天刀墨宝闹钟
             
         }
 
+        public static FormTimeTable GetInstance()
+        {
+            if (isShowThisForm == false)
+            {
+                formTimeTable = new FormTimeTable();
+                return formTimeTable;
+            }
+            else
+            {
+                return formTimeTable;
+            }
+        }
+        public void SingleShow()
+        {
+            if (isShowThisForm)
+            {
+                formTimeTable.Focus();
+            }
+            else
+            {
+                formTimeTable.Show();
+                isShowThisForm = true;
+            }
+        }
+
         private void FormTimeTable_Load(object sender, EventArgs e)
         {
             CreateAndAddLabels();
@@ -231,6 +257,12 @@ namespace 天刀墨宝闹钟
         {
             //获取全部时辰数据
             isHasTime.Clear();
+
+            if (FormMain.paintingQueue==null)
+            {
+                return;
+            }
+
             foreach (var painting in FormMain.paintingQueue)
             {
                 foreach (var item in painting.Value.timeArray)
@@ -246,6 +278,11 @@ namespace 天刀墨宝闹钟
         //修改具体时辰、昼夜标签
         private void ChangeTimeLabel()
         {
+            if (isHasTime==null)
+            {
+                return;
+            }
+
             foreach (var item in isHasTime)
             {
                 if (twelveTime[item]==-1) //白昼
@@ -360,6 +397,7 @@ namespace 天刀墨宝闹钟
 
         private void FormTimeTable_FormClosing(object sender, FormClosingEventArgs e)
         {
+            isShowThisForm = false;
             FormMain.isShowTimeTableForm = false;
         }
 

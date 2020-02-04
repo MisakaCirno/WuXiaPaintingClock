@@ -16,6 +16,7 @@ namespace 天刀墨宝闹钟
 {
     public partial class FormMain : Form
     {
+        public static readonly string localVersion= "v1.1.0";
         public static Dictionary<string, QueueElement> paintingQueue = new Dictionary<string, QueueElement>(); //监测的队列
         Dictionary<string, TimeAndMapName> paintingData = new Dictionary<string, TimeAndMapName>
         {
@@ -128,6 +129,7 @@ namespace 天刀墨宝闹钟
         bool isUseReminderForm; //是否开启单独窗口提醒
         bool isTimerRunning; //是否开启时钟
         bool isUseMultiSelect; //是否使用了多选
+
         public static bool isShowTimeTableForm; //是否开启了时间表窗口
 
         FormSwitch formSwitch; //开关窗口
@@ -272,7 +274,7 @@ namespace 天刀墨宝闹钟
         {
             Text = "正在读取配置中... 请稍等";
             ReadConfig();
-            Text = "天刀墨宝闹钟 v1.1.0";
+            Text = "天刀墨宝闹钟 "+localVersion;
 
             notifyIcon1.Text = "天刀墨宝闹钟";
             notifyIcon1.Icon = Properties.Resources.Clock;
@@ -550,7 +552,10 @@ namespace 天刀墨宝闹钟
             }
 
             CheckQueue();
-            UpdateList();
+            if (isTimerRunning)
+            {
+                UpdateList();
+            }
             if (isUseReminderForm)
             {
                 FormSwitch.reminderForm.UpdateForm(reminderList);
@@ -581,7 +586,10 @@ namespace 天刀墨宝闹钟
             }
 
             CheckQueue();
-            UpdateList();
+            if (isTimerRunning)
+            {
+                UpdateList();
+            }
             if (isUseReminderForm)
             {
                 FormSwitch.reminderForm.UpdateForm(reminderList);
@@ -626,7 +634,10 @@ namespace 天刀墨宝闹钟
                 if (isTimerRunning && isUseMultiSelect==false)
                 {
                     CheckQueue();
-                    UpdateList();
+                    if (isTimerRunning)
+                    {
+                        UpdateList();
+                    }
                     if (isUseReminderForm)
                     {
                         FormSwitch.reminderForm.UpdateForm(reminderList);
@@ -652,14 +663,12 @@ namespace 天刀墨宝闹钟
 
         private void buttonHelp_Click(object sender, EventArgs e)
         {
-            Form formHelp = new FormHelp();
-            formHelp.Show();
+            FormHelp.GetInstance().SingleShow();
         }
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            Form formAbout = new FormAbout();
-            formAbout.Show();
+            FormAbout.GetInstance().SingleShow();
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -747,20 +756,18 @@ namespace 天刀墨宝闹钟
 
         private void buttonTimeTable_Click(object sender, EventArgs e)
         {
-            if (nowChinaTime=="")
+            if (nowChinaTime == "" || isTimerRunning == false)
             {
+                MessageBox.Show("当前未开启提示功能，请开启检测功能后再使用该功能！\r\n或稍后再尝试使用该功能。","提示");
                 return;
             }
 
-            if (isShowTimeTableForm)
+            if (isShowTimeTableForm==false)
             {
-                formTimeTable.Focus();
-                return;
+                formTimeTable = FormTimeTable.GetInstance();
+                isShowTimeTableForm = true;
             }
-
-            formTimeTable = new FormTimeTable();
-            formTimeTable.Show();
-            isShowTimeTableForm = true;
+            formTimeTable.SingleShow();
         }
     }
 }

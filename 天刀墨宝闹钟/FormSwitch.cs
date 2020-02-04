@@ -108,7 +108,7 @@ namespace 天刀墨宝闹钟
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Console.WriteLine("Timer is running!");
-            /*
+            
             //根据窗口标题判断是否隐藏
             StringBuilder s = new StringBuilder(512);
             GetWindowText(GetForegroundWindow(), s, s.Capacity);
@@ -130,7 +130,7 @@ namespace 天刀墨宝闹钟
                     reminderForm.Visible = true;
                 }
             }
-            */
+            
             
         }
 
